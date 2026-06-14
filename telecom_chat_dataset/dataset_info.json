@@ -1,0 +1,47 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "tele_qn_a",
+  "dataset_size": 4703083,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/netop/TeleQnA@0eba715a43f0ab7e4d9d7e09ceb258642a149391/test.json": {
+      "num_bytes": 6537506,
+      "checksum": null
+    }
+  },
+  "download_size": 6537506,
+  "features": {
+    "messages": {
+      "feature": {
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 11240589,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 4703083,
+      "num_examples": 10000,
+      "dataset_name": "tele_qn_a"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

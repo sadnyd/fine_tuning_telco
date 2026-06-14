@@ -1,0 +1,54 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "bitext-telco-llm-chatbot-training-dataset",
+  "dataset_size": 15443353,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/bitext/Bitext-telco-llm-chatbot-training-dataset@eacc593a96d75ec6da0887f081ff0dfc442fccab/bitext-telco-llm-chatbot-training-dataset.csv": {
+      "num_bytes": 15125807,
+      "checksum": null
+    }
+  },
+  "download_size": 15125807,
+  "features": {
+    "instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "intent": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tags": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 30569160,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 15443353,
+      "num_examples": 26000,
+      "dataset_name": "bitext-telco-llm-chatbot-training-dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
