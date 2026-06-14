@@ -1,6 +1,4 @@
 import os
-from dotenv import load_dotenv
-
 
 os.environ["AMD_SERIALIZE_KERNEL"] = "3"
 os.environ["TORCH_USE_HIP_DSA"] = "1"
@@ -51,10 +49,7 @@ def dump_json(obj, filename):
 
 
 
-
-
-load_dotenv()
-hf_token = os.getenv("HF_TOKEN")
+hf_token = ""
 if hf_token:
     login(token=hf_token)
     print("Logged in to HuggingFace.")
@@ -239,7 +234,7 @@ def format_chat(example):
 
 train_formatted = train_ds.map(format_chat)
 val_formatted   = val_ds.map(format_chat)
-inspect_dataset(ds["train"], tokenizer)
+inspect_dataset(train_formatted, tokenizer)
 
 print(f"\nSample formatted text:\n{train_formatted[0]['text']}")
 
